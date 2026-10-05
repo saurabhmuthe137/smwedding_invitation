@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5a1c26">
+    <meta name="description" content="With the blessings of our families, join us to celebrate a beautiful beginning.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wedding Invitation | Ananya & Rohan">
+    <meta property="og:description" content="With the blessings of our families, join us to celebrate a beautiful beginning.">
+    <meta property="og:image" content="assets/images/couple.jpg">
+    <title>Wedding Invitation | Ananya &amp; Rohan</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E%E0%A5%90%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen" aria-live="polite">
+        <div class="loader-ornament" aria-hidden="true">ॐ</div>
+        <p class="sanskrit">॥ श्री गणेशाय नमः ॥</p>
+        <p class="loader-caption">A New Beginning of Forever</p>
+        <span class="loader-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Back to home">A <span>&amp;</span> R</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="#home">Home</a><a href="#couple">Couple</a><a href="#events">Events</a><a href="#story">Story</a>
+            <a href="#gallery">Gallery</a><a href="#video">Video</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a>
+        </nav>
+        <a class="header-rsvp" href="#rsvp">Kindly reply <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="heroNames">
+            <div class="hero-image" id="heroImage" aria-hidden="true"></div>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-frame" aria-hidden="true"></div>
+            <div class="hero-copy">
+                <p class="hero-blessing">॥ श्री गणेशाय नमः ॥</p>
+                <p class="eyebrow hero-eyebrow">Together with their families</p>
+                <div class="hero-names" id="heroNames"></div>
+                <p class="hero-date" id="heroDate"></p>
+                <p class="hero-note">We invite you to celebrate our beautiful beginning.</p>
+                <a class="button button-gold" id="enterInvitation" href="#couple">Open invitation <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-side-note" aria-hidden="true">A celebration of love · Pune, India</div>
+            <a class="scroll-cue" href="#couple"><span></span> Scroll to explore</a>
+            <span class="hero-sunburst" aria-hidden="true">✳</span>
+        </section>
+
+        <section class="intro section-pad" id="couple">
+            <div class="section-heading reveal">
+                <p class="eyebrow">With the blessings of our families</p>
+                <h2>A promise, <em>made for life.</em></h2>
+                <p class="section-lede">Two hearts, two families, and one beautiful beginning. We would be honoured to have you with us.</p>
+            </div>
+            <div class="couple-grid" id="coupleCards"></div>
+            <div class="intro-foot reveal"><span>✳</span><p>Celebrating love, family &amp; forever</p><span>✳</span></div>
+        </section>
+
+        <section class="countdown-band" aria-label="Wedding countdown">
+            <div class="countdown-pattern" aria-hidden="true"></div>
+            <div class="countdown-inner reveal">
+                <p class="eyebrow">The celebration begins in</p>
+                <h2>Until we say <em>“I do”</em></h2>
+                <div class="countdown" id="countdown" aria-live="polite"></div>
+                <p class="countdown-date" id="countdownDate"></p>
+            </div>
+        </section>
+
+        <section class="events-section section-pad" id="events">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Save the celebrations</p><h2>Days of <em>joy</em></h2>
+                <p class="section-lede">From turmeric blessings to the dance floor, every moment is better together.</p>
+            </div>
+            <div class="event-grid" id="eventCards"></div>
+        </section>
+
+        <section class="ceremony-band">
+            <div class="ceremony-art" aria-hidden="true">ॐ</div>
+            <div class="ceremony-copy reveal">
+                <p class="eyebrow">The auspicious moment</p><p class="ceremony-sanskrit">॥ शुभ विवाह ॥</p>
+                <h2 id="ceremonyDate"></h2>
+                <p class="ceremony-muhurat" id="ceremonyMuhurat"></p>
+                <p class="ceremony-venue" id="ceremonyVenue"></p>
+                <a class="button button-outline-light" id="ceremonyMap" target="_blank" rel="noopener">View location <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="ceremony-leaf ceremony-leaf-one" aria-hidden="true">❋</span><span class="ceremony-leaf ceremony-leaf-two" aria-hidden="true">❋</span>
+        </section>
+
+        <section class="story-section section-pad" id="story">
+            <div class="section-heading reveal"><p class="eyebrow">A little bit of magic</p><h2>Our <em>story</em></h2><p class="section-lede">The little moments that led us to this big one.</p></div>
+            <div class="story-timeline" id="storyTimeline"></div>
+        </section>
+
+        <section class="gallery-section section-pad" id="gallery">
+            <div class="section-heading reveal"><p class="eyebrow">Moments we keep close</p><h2>Love, in <em>frames</em></h2><p class="section-lede">A few favourite pages from our story. Select a photograph to take a closer look.</p></div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+
+        <section class="video-section" id="video">
+            <div class="video-image" id="videoImage" aria-hidden="true"></div>
+            <div class="video-overlay"></div>
+            <div class="video-copy reveal"><p class="eyebrow">A little film, a lot of feeling</p><h2>Our story,<br><em>in motion.</em></h2><button class="video-play" id="videoPlay" type="button" aria-label="Watch our wedding story">▶</button><p>Watch Our Wedding Story <span aria-hidden="true">♥</span></p></div>
+        </section>
+
+        <section class="family-section section-pad">
+            <div class="section-heading reveal"><p class="eyebrow">The people who made us</p><h2>Our <em>families</em></h2><p class="section-lede">With grateful hearts, we celebrate the love that brought us here.</p></div>
+            <div class="family-grid" id="familyCards"></div>
+        </section>
+
+        <section class="venue-section section-pad" id="venue">
+            <div class="venue-photo" id="venuePhoto" role="img" aria-label="Wedding venue"></div>
+            <div class="venue-copy reveal"><p class="eyebrow">Where we gather</p><h2 id="venueName"></h2><p class="venue-address" id="venueAddress"></p><p class="venue-date" id="venueDate"></p><div class="venue-actions"><a class="button button-maroon" id="venueMap" target="_blank" rel="noopener">View on map <span aria-hidden="true">↗</span></a><a class="text-link" id="directionsLink" target="_blank" rel="noopener">Get directions <span aria-hidden="true">→</span></a></div></div>
+        </section>
+
+        <section class="rsvp-section section-pad" id="rsvp">
+            <div class="rsvp-inner reveal">
+                <div class="rsvp-heading"><p class="eyebrow">We saved you a seat</p><h2>Will you <em>join us?</em></h2><p>Kindly let us know if you can celebrate with us.</p><div class="rsvp-flower" aria-hidden="true">✿</div></div>
+                <form class="rsvp-form" id="rsvpForm">
+                    <label>Guest name<input name="guestName" autocomplete="name" required placeholder="Your name"></label>
+                    <div class="form-row"><label>Number of guests<input name="guestCount" type="number" min="1" max="20" value="1" required></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="Optional"></label></div>
+                    <fieldset><legend>Will you be attending?</legend><label class="radio-choice"><input type="radio" name="attending" value="Joyfully accepts" checked><span>Joyfully accepts</span></label><label class="radio-choice"><input type="radio" name="attending" value="Regretfully declines"><span>Regretfully declines</span></label></fieldset>
+                    <label>A note for the couple<textarea name="message" rows="3" placeholder="Share a little message (optional)"></textarea></label>
+                    <button class="button button-gold" type="submit">Send RSVP on WhatsApp <span aria-hidden="true">↗</span></button>
+                    <p class="form-note" id="rsvpNote">Your reply opens as a message in WhatsApp.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="gift-section section-pad" id="giftSection" hidden>
+            <div class="gift-inner reveal"><div><p class="eyebrow">A note from us</p><h2>Your presence is our <em>greatest gift.</em></h2><p>If you would still like to send a blessing, you may do so here.</p><div class="upi-row"><span id="upiDisplay"></span><button id="copyUpi" type="button" class="copy-button">Copy UPI ID</button></div></div><div class="qr-placeholder" aria-label="QR code placeholder"><span>QR</span><small>Add your UPI QR artwork here</small></div></div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-monogram">A <span>&amp;</span> R</div><p id="footerNames"></p><p>Made with <span class="heart">♥</span> for our special day</p><small>Digital Wedding Invitation</small></footer>
+
+    <div class="floating-actions" aria-label="Invitation controls">
+        <button id="musicToggle" type="button" aria-label="Play wedding music" title="Play wedding music"><span aria-hidden="true">♫</span></button>
+        <button id="musicMuteToggle" type="button" aria-label="Mute music" title="Mute music"><span aria-hidden="true">◖))</span></button>
+        <button id="shareToggle" type="button" aria-label="Share invitation" title="Share invitation"><span aria-hidden="true">↗</span></button>
+        <div class="share-menu" id="shareMenu" hidden>
+            <button type="button" data-share="whatsapp">WhatsApp</button><button type="button" data-share="copy">Copy link</button><button type="button" data-share="instagram">Instagram</button><button type="button" data-share="facebook">Facebook</button>
+        </div>
+    </div>
+    <span class="visually-hidden" id="musicStatus" aria-live="polite">Music paused</span>
+    <audio id="weddingAudio" src="assets/music/wedding-music.mp3" loop preload="none"></audio>
+
+    <div id="adminControls" hidden>
+    <button class="edit-trigger" id="editTrigger" type="button"><span aria-hidden="true">✎</span> Edit invitation</button>
+    <div class="panel-backdrop" id="panelBackdrop" hidden></div>
+    <aside class="edit-panel" id="editPanel" aria-hidden="true" aria-labelledby="editTitle">
+        <div class="panel-header"><div><p class="eyebrow">Your invitation</p><h2 id="editTitle">Edit details</h2></div><button class="exit-admin" id="exitAdmin" type="button">Exit Admin</button><button class="panel-close" id="panelClose" type="button" aria-label="Close edit panel">×</button></div>
+        <p class="panel-intro">Changes preview as you type. Save them on this device when you are ready.</p>
+        <form id="editForm">
+            <details open><summary>Couple &amp; date</summary><div class="editor-fields">
+                <label>Bride name<input data-key="brideName" type="text"></label><label>Groom name<input data-key="groomName" type="text"></label><label>Wedding date &amp; time<input data-key="weddingDate" type="datetime-local"></label><label>Wedding muhurat<input data-key="muhurat" type="text"></label>
+            </div></details>
+            <details open><summary>Venue &amp; links</summary><div class="editor-fields">
+                <label>Venue name<input data-key="venueName" type="text"></label><label>Full address<textarea data-key="venueAddress" rows="2"></textarea></label><label>Google Maps URL<input data-key="googleMapsUrl" type="url"></label><label>WhatsApp number<input data-key="whatsappNumber" type="tel"></label><label>Wedding video path<input data-key="weddingVideo" type="text" placeholder="assets/videos/wedding-video.mp4"></label><label>Hero photo path<input data-key="heroImage" type="text" placeholder="assets/images/couple.jpg"></label>
+            </div></details>
+            <details open><summary>Events</summary><div id="eventEditor" class="editor-fields"></div></details>
+            <details><summary>Our story</summary><div id="storyEditor" class="editor-fields"></div></details>
+            <details><summary>Photos</summary><div class="editor-fields"><label>Bride photo preview<input type="file" accept="image/*" data-image="bridePhoto"><small>Local preview only. Copy the photo into assets/images/ and deploy to publish it.</small></label><label>Groom photo preview<input type="file" accept="image/*" data-image="groomPhoto"><small>Local preview only. Copy the photo into assets/images/ and deploy to publish it.</small></label><div id="galleryEditor" class="gallery-editor"></div></div></details>
+            <details><summary>Gifts &amp; music</summary><div class="editor-fields"><label>UPI ID<input data-key="upiId" type="text"></label><label>Music file path<input data-key="music" type="text" placeholder="assets/music/wedding-music.mp3"><small>Use an MP3 file copied into assets/music/.</small></label><label class="check-label"><input data-key="showGiftSection" type="checkbox"> Show gift section</label></div></details>
+            <p class="editor-status" id="editorStatus" role="status"></p>
+            <div class="editor-actions"><button class="button button-maroon" id="saveChanges" type="button">Save changes</button><button class="button button-quiet" id="resetChanges" type="button">Reset changes</button></div>
+        </form>
+    </aside>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo gallery">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close gallery">×</button><button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous photo">←</button><img id="lightboxImage" src="" alt="Wedding gallery photograph"><button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next photo">→</button><p class="lightbox-count" id="lightboxCount"></p>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
