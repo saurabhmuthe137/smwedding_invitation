@@ -5,13 +5,13 @@ const isAdminMode = adminKeyConfigured && new URLSearchParams(window.location.se
 
 /* EDIT THIS SECTION: wedding details and relative static asset paths. */
 const weddingData = {
-    brideName: "NILESH",
-    groomName: "SHUBHAM",
+    brideName: "ANUSHKA",
+    groomName: "VIRAT",
     weddingDate: "2026-12-12T12:31:00",
     muhurat: "12:31 PM · Shubh Muhurat",
-    bridePhoto: "assets/images/bride.jpg",
-    groomPhoto: "assets/images/groom.jpg",
-    heroImage: "assets/images/couple.jpg",
+    bridePhoto: "assets/images/gallery1.jpg",
+    groomPhoto: "assets/images/gallery2.jpg",
+    heroImage: "assets/images/gallery3.jpg",
     whatsappNumber: "91 7972784720",
     venueName: "The Gulmohar Palace",
     venueAddress: "Survey No. 18, Baner Road, Pune, Maharashtra 411045",
@@ -26,13 +26,15 @@ const weddingData = {
         "assets/images/gallery3.jpg",
         "assets/images/gallery4.jpg",
         "assets/images/gallery5.jpg",
+        
         "assets/images/gallery6.jpg",
         "assets/images/gallery7.jpg",
         "assets/images/gallery8.jpg",
-        "assets/images/gallery9.jpg",
-        "assets/images/gallery10.jpg",
-        "assets/images/gallery11.jpg",
-        "assets/images/gallery12.jpg"
+        "assets/images/gallery3.jpg",
+        "assets/images/gallery2.jpg",
+        "assets/images/gallery5.jpg",
+        "assets/images/gallery5.jpg",
+        "assets/images/gallery6.jpg"
     ],
     events: [
         { name: "Haldi", date: "23 February 2027", time: "10:00 AM", venue: "The Gulmohar Palace", description: "A morning of turmeric, blessings and sunshine.", mapsUrl: "" },
@@ -46,7 +48,7 @@ const weddingData = {
         { title: "First Conversation", date: "A little later", description: "A quick hello turned into hours of easy conversation." },
         { title: "The Proposal", date: "A heartfelt yes", description: "A question, a pause, and the easiest answer of our lives." },
         { title: "Engagement", date: "A promise made", description: "Our families came together to celebrate the next chapter." },
-        { title: "Wedding Day", date: "24 February 2026", description: "The beginning of our forever, with all of you beside us." }
+        { title: "Wedding Day", date: "24 February 2027", description: "The beginning of our forever, with all of you beside us." }
     ],
     brideFamily: { title: "Bride's Family", father: "Mr. & Mrs. Sharma", mother: "With love and gratitude", members: "and the Sharma family" },
     groomFamily: { title: "Groom's Family", father: "Mr. & Mrs. Mehta", mother: "With love and gratitude", members: "and the Mehta family" }
